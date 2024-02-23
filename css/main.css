@@ -1,0 +1,47 @@
+html {
+    scroll-behavior: smooth;
+}
+
+nav ul {
+    position: fixed;
+    top: 0;
+    list-style-type: none;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  div {
+    height: 100vh;
+    padding: 20px;
+  }
+
+body {
+    overflow: auto;
+    height: 100vh;
+    margin: 0;
+    background: #333;
+}
+
+.line {
+    position: absolute;
+    width: .05vh;
+    height: 100%;
+    background: linear-gradient(to top, #ddd, #fff, transparent);
+    animation: scroll 6s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(-100%);
+    }
+    16.66% {
+        transform: translateY(100%);
+    }
+    16.67%, 100% {
+        transform: translateY(100%);
+    }
+}
